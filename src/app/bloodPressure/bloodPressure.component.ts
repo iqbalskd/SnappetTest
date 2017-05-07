@@ -65,6 +65,7 @@ this.options = {
 
             }
   };
+}
 
   private  formatData(data)
   {
