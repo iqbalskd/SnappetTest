@@ -1,0 +1,24 @@
+<h3>
+  {{title}}
+</h3>
+<nav>
+	<a [routerLink]="['/']">
+    Home
+  </a>
+  |
+	<a [routerLink]="['/bloodPressure']">
+    Blood Pressure
+  </a>
+  |
+	<a [routerLink]="['/bmi']">
+    BMI
+  </a>
+  |
+	<a [routerLink]="['/acq']">
+    ACQ
+  </a>
+</nav>
+
+<main>
+	<router-outlet></router-outlet>
+</main>
