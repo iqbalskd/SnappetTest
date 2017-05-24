@@ -16,6 +16,9 @@
   "exclude": [
     "node_modules"
   ],
+  "types": [
+  "underscore"
+  ],
   "awesomeTypescriptLoaderOptions": {
     "useWebpackText": true
   },

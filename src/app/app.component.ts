@@ -5,5 +5,5 @@ import {Component} from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title= "Iqbal's Test Application";
+  title= "Iqbal's Test Application for snappet";
 }

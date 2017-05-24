@@ -2,26 +2,25 @@ import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router';
 import { rootRouterConfig } from './app.routes';
 import { AppComponent } from './app.component';
-import { MdVisionService } from './shared/mdVision.service';
+import { snappetService } from './shared/snappet.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { nvD3 } from 'ng2-nvd3'
 
 
-import { BloodPressureComponent } from './bloodPressure/bloodPressure.component';
+
 import { HomeComponent } from './home/home.component';
-import { BMIComponent } from './bmi/bmi.component';
+import { correctComponent } from './correct/correct.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
-import { AcqComponent } from './acq/acq.component';
+import { ProgressComponent } from './progress/progress.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BloodPressureComponent,
-    BMIComponent,
+    correctComponent,
     HomeComponent,
-    AcqComponent,
+    ProgressComponent,
     nvD3
   ],
   imports: [
@@ -32,7 +31,7 @@ import { AcqComponent } from './acq/acq.component';
     RouterModule.forRoot(rootRouterConfig, { useHash: true })
   ],
   providers: [
-    MdVisionService
+    snappetService
   ],
   bootstrap: [ AppComponent ]
 })
